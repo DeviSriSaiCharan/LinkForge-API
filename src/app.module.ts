@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
-import { UrlsModule } from './modules/urls/urls.module';
 
 @Module({
   imports: [
@@ -21,7 +20,6 @@ import { UrlsModule } from './modules/urls/urls.module';
         autoLoadEntities: true,
       }),
     }),
-    UrlsModule,
   ],
   controllers: [],
   providers: [],
